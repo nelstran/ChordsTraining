@@ -217,8 +217,10 @@ namespace ChordsTraining
             button1_Click(sender,e);
         }
 
-        private void letterMode(int root)
+        private void letterMode(int root, object sender, EventArgs e)
         {
+            button1_Click(sender, e);
+
             nextButton.Visible = false;
             revealButton.Visible = false;
             Chord chor;
@@ -263,62 +265,62 @@ namespace ChordsTraining
         }
         private void Abutton_Click(object sender, EventArgs e)
         {
-            letterMode(9);
+            letterMode(9, sender, e);
         }
 
         private void ASharpButton_Click(object sender, EventArgs e)
         {
-            letterMode(10);
+            letterMode(10, sender, e);
         }
 
         private void Bbutton_Click(object sender, EventArgs e)
         {
-            letterMode(11);
+            letterMode(11, sender, e);
         }
 
         private void Cbutton_Click(object sender, EventArgs e)
         {
-            letterMode(0);
+            letterMode(0, sender, e);
         }
 
         private void CSharpButton_Click(object sender, EventArgs e)
         {
-            letterMode(1);
+            letterMode(1, sender, e);
         }
 
         private void Dbutton_Click(object sender, EventArgs e)
         {
-            letterMode(2);
+            letterMode(2, sender, e);
         }
 
         private void DSharpButton_Click(object sender, EventArgs e)
         {
-            letterMode(3);
+            letterMode(3, sender, e);
         }
 
         private void ESharpButton_Click(object sender, EventArgs e)
         {
-            letterMode(4);
+            letterMode(4, sender, e);
         }
 
         private void FButton_Click(object sender, EventArgs e)
         {
-            letterMode(5);
+            letterMode(5, sender, e);
         }
 
         private void FSharpButton_Click(object sender, EventArgs e)
         {
-            letterMode(6);
+            letterMode(6, sender, e);
         }
 
         private void GButton_Click(object sender, EventArgs e)
         {
-            letterMode(7);
+            letterMode(7, sender, e);
         }
 
         private void GSharpButton_Click(object sender, EventArgs e)
         {
-            letterMode(8);
+            letterMode(8, sender, e);
         }
 
         private void majButton_Click(object sender, EventArgs e)
@@ -354,6 +356,7 @@ namespace ChordsTraining
 
         private void quizButton_Click(object sender, EventArgs e)
         {
+            button1_Click(sender, e);
             majButton.Visible = false;
             minButton.Visible = false;
             augButton.Visible = false;
